@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Diagnosis</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .navbar{
+            height: 70px;
+            background-color: rgb(73, 65, 65);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+        }
+        .h2{
+            display: flex;
+            flex: 1;
+            justify-content: start;
+            align-items: center;
+            font-size: 27px;
+            margin-left: 29px;
+            font-weight: 600;
+        }
+        .title{
+            flex: 2;
+            display: flex;
+            margin-left: 100px;
+            align-items: center;
+            flex-direction: start;
+            font-size: 28px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .form-main{
+            width: 100%;
+            height: 740px;
+            background-color: beige;
+            display: flex;
+            
+        }
+        .form{
+            flex: 1;
+            margin-top: 40px;
+            width: 100%;
+            /* height: 100%; */
+            background-color: indianred;
+            margin: 100px 100px 60px 60px;
+            border-radius: 25px;
+    
+        }
+        .result{
+            flex: 1;
+        }
+        h3{
+            text-align: center;
+            font-size: 23px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5px 100px 5px 100px;
+        }
+        input{
+            border-radius: 20px;
+            height: 25px;
+            padding: 5px;
+        }
+        button{
+            text-align: center;
+            width: 95px;
+            height: 40px;
+            background-color: #0275d8;
+            margin-left: 180px;
+            margin-top: 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+        <span class="h2"><a href="/"> MedOn </a></span>
+        <span class="title">Disease Diagnosis</span>
+    </div>
+    <div class="form-main">
+    <div class="form">
+        <h3>Fill the form</h3>
+        <form>
+            <input placeholder="Symptom 1">
+            <br>
+            <input placeholder="Symptom 2">
+            <br>
+            <input placeholder="Symptom 3">  
+            <br>
+            <input placeholder="Symptom 4">
+            <br>
+            <input placeholder="Symptom 5">
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="result">
+
+    </div>
+    </div>
+</body>
+</html>

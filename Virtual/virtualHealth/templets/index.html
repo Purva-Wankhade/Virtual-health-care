@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}"/>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="intro" id="intro">
+    <div class="left-i">
+      <h1>
+      Welcome to the Virtual Health Care Platform.
+      </h1>
+      <p>The site where you can simply receive the proper medication prescribed by the doctor and have your illness diagnosed based on your symptoms.</p>
+      <p style="margin-top: 80px; font-size: 18px;">
+        Scroll Down to know more.
+        <br>
+        <span style="text-align: center;">↓</span>
+      </p>
+      
+    </div>
+    <div class="right-i">
+      <img src="/static/img/dc1.png"/>
+    </div>
+  </div>
+  <div class="dia" id="dia">
+    <div class="left-d">
+      <img src="/static/img/dcap.png"/>
+    </div>
+    <div class="right-d">
+      <h2>Disease Diagnosis</h2>
+      <p>By entering 5 symptoms, our algorithm will identify the illness you have and make a simple diagnosis for you.</p>
+      <div class="btn"><a href="diseaseDia" style="text-decoration: none; color: inherit;"> Do disease diagnosis. </a></div>
+    </div>
+  </div>
+  <div class="app" id="app">
+    <div class="left-a">
+      <h2>
+        Appointment
+      </h2>
+      <p>
+        With just a few clicks, you can simply make an appointment with the doctor of your choice. You also have the option of making a video call appointment or an actual visit.
+      </p>
+    </div>
+    <div class="right-a">
+      <img src="/static/img/dcapp.png"/>
+    </div>
+  </div>
+  <div class="doc" id="doc">
+    <div class="left-doc">
+      <img src="/static/img/doc.png"/>
+    </div>
+    <div class="right-doc">
+      <h2>Top Doctors</h2>
+      <p>We will suggest you the best medical professionals in each sector.</p>
+    </div>
+  </div>
+</body>
+</html>
